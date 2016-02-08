@@ -1,0 +1,30 @@
+﻿<metro:MetroWindow x:Class="MortgageCalculator.Views.MainView"
+                   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                   xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                   xmlns:local="clr-namespace:MortgageCalculator"
+                   xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                   xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+                   xmlns:vm="clr-namespace:MortgageCalculator.ViewModels"
+                   Title="Mortgage Calculator"
+                   Width="525"
+                   Height="350"
+                   mc:Ignorable="d">
+
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+
+    <TabControl>
+
+        <TabItem Header="New Mortgage">
+            <ContentPresenter Content="{Binding NewMortgage}" />
+        </TabItem>
+
+        <TabItem Header="Existing Mortgage">
+            <ContentPresenter Content="{Binding ExistingMortgage}" />
+        </TabItem>
+
+    </TabControl>
+
+</metro:MetroWindow>
