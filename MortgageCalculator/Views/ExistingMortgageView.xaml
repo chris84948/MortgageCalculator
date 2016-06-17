@@ -26,7 +26,6 @@
         <TextBox Grid.Row="1"
                  Width="200"
                  Margin="10,0"
-                 
                  HorizontalAlignment="Left"
                  VerticalAlignment="Top"
                  Text="{Binding Principal,
@@ -34,7 +33,7 @@
 
         <Label Grid.Row="2"
                VerticalAlignment="Bottom"
-               Content="Interest Rate (%)" />
+               Content="Interest Rate (4% = 0.04)" />
         <TextBox Grid.Row="3"
                  Width="200"
                  Margin="10,0"
